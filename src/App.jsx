@@ -10,7 +10,7 @@ import Footer from "./components/footer/Footer"
 
 export default function App() {
   return (
-    <div className="App">
+    <>
       <GlobalStyles/>
       <Header/>
       <Home/>
@@ -20,6 +20,6 @@ export default function App() {
       <Blog/>
       <Contact/>
       <Footer/>
-    </div>
+    </>
   )
 }

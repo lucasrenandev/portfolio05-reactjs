@@ -49,46 +49,48 @@ export const NavList = styled.ul`
 export const List = styled.li`
     position: relative;
 
-    @media screen and (max-width: 1091px) {
-        width: 100%;
-    }
-`
-export const NavLink = styled.a`
-    padding: 0 22px;
-    color: var(--text-color);
-    font-size: var(--p-font);
-    font-weight: 500;
-    
-    &::before {
-        position: absolute;
-        content: '';
-        bottom: -4px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: var(--main-color);
-        transition: all 0.4s ease;
-    }
-
-    &:hover::before {
-        width: 100%;
-    }
-
-    @media screen and (max-width: 1091px) {
-        display: block;
-        width: 91.5vw;
-        padding: 1rem;
-        margin: 1rem;
-        border-left: 2px solid var(--bg-color);
-        
-        &:hover {
-            background-color: var(--bg-color);
-            color: var(--second-color);
-        }
+    .nav-link {
+        padding: 0 22px;
+        color: var(--text-color);
+        font-size: var(--p-font);
+        font-weight: 500;
 
         &::before {
-            display: none;
+            position: absolute;
+            content: '';
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--main-color);
+            transition: all 0.4s ease;
         }
+
+        &:hover::before {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1091px) {
+            display: block;
+            width: 91.5vw;
+            padding: 1rem;
+            margin: 1rem;
+            border-left: 2px solid var(--bg-color);
+        
+            &:hover {
+                background-color: var(--bg-color);
+                color: var(--second-color);
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 1091px) {
+        width: 100%;
     }
 `
 export const HeaderBtn = styled.div`
